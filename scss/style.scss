@@ -1,8 +1,48 @@
 @import "config";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: $background-color;
+  font-family: "Outfit", sans-serif;
 }
 p {
   font-size: 15px;
+}
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__wrapper {
+    background: white;
+    width: 280px;
+    border-radius: 10px;
+    padding: 15px;
+    &__content__text {
+      text-align: center;
+      h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 21px;
+      }
+      p {
+        font-weight: 200;
+        padding-bottom: 10px;
+      }
+    }
+  }
 }
 @import "media";
